@@ -2,7 +2,7 @@
 
 ## Demo
 
-<img src="https://i.imgur.com/0eSv1xW.gif" width="350" height="650">
+<img src="https://i.imgur.com/8KUbEer.gif" width="350" height="650">
 
 ### You will learn:
 - MVVM
