@@ -10,6 +10,7 @@
 		202A1043200ACD3D0070BF87 /* UnsplashImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A1042200ACD3D0070BF87 /* UnsplashImages.swift */; };
 		202A1045200AE74C0070BF87 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A1044200AE74C0070BF87 /* Endpoint.swift */; };
 		202A1047200AE9A50070BF87 /* UnsplashClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A1046200AE9A50070BF87 /* UnsplashClient.swift */; };
+		20AE7849200C3EC50060F4D6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE7848200C3EC50060F4D6 /* ViewModel.swift */; };
 		DA7B67EE1FD98D5C0060B4AD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B67ED1FD98D5C0060B4AD /* APIClient.swift */; };
 		DA96087D1FD71A2F00C8EE06 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96087C1FD71A2F00C8EE06 /* PhotoCell.swift */; };
 		DA96087F1FD71D3900C8EE06 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96087E1FD71D3900C8EE06 /* PinterestLayout.swift */; };
@@ -24,6 +25,7 @@
 		202A1042200ACD3D0070BF87 /* UnsplashImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImages.swift; sourceTree = "<group>"; };
 		202A1044200AE74C0070BF87 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		202A1046200AE9A50070BF87 /* UnsplashClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashClient.swift; sourceTree = "<group>"; };
+		20AE7848200C3EC50060F4D6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		DA7B67ED1FD98D5C0060B4AD /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		DA96087C1FD71A2F00C8EE06 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		DA96087E1FD71D3900C8EE06 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20AE7847200C3EB60060F4D6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				20AE7848200C3EC50060F4D6 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		DA7B67EC1FD98D500060B4AD /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 		DAB9FCFA1FC8E4C200CF64A7 /* PinterestApplication */ = {
 			isa = PBXGroup;
 			children = (
+				20AE7847200C3EB60060F4D6 /* ViewModels */,
 				DA7B67EC1FD98D500060B4AD /* Networking */,
 				DA96087B1FD71A1900C8EE06 /* Views */,
 				DAB9FCFB1FC8E4C300CF64A7 /* AppDelegate.swift */,
@@ -171,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				202A1045200AE74C0070BF87 /* Endpoint.swift in Sources */,
+				20AE7849200C3EC50060F4D6 /* ViewModel.swift in Sources */,
 				DA96087F1FD71D3900C8EE06 /* PinterestLayout.swift in Sources */,
 				DAB9FCFE1FC8E4C300CF64A7 /* ViewController.swift in Sources */,
 				DA96087D1FD71A2F00C8EE06 /* PhotoCell.swift in Sources */,

@@ -41,13 +41,6 @@ extension APIClient {
                 return
             }
 
-            do {
-                let data = try JSONDecoder().decode([T].self, from: data!)
-                print(data)
-            } catch let jsonError {
-                print(jsonError)
-            }
-            
             guard let value = try? JSONDecoder().decode([T].self, from: data!) else {
                 completion(.error(APIError.jsonDecoder))
                 return
