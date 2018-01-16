@@ -41,7 +41,7 @@ class ViewModel {
     func fetchPhotos() {
         if let client = client as? UnsplashClient {
             self.isLoading = true
-            let endpoint = UnspashEndpoint.photos(id: UnsplashClient.apiKey, order: .popular)
+            let endpoint = UnspashEndpoint.photos(id: UnsplashClient.apiKey, order: .latest)
             client.fetch(with: endpoint) { (either) in
                 switch either {
                 case .success(let photos):
@@ -58,13 +58,13 @@ class ViewModel {
         self.photos.forEach { (photo) in
             DispatchQueue.global(qos: .background).async(group: group) {
                 group.enter()
-                guard let imageData = try? Data(contentsOf: URL(string: "")!) else {
-                    self.showError?(APIError.unknown)
+                guard let imageData = try? Data(contentsOf: photo.urls.small) else {
+                    self.showError?(APIError.imageDownload)
                     return
                 }
 
                 guard let image = UIImage(data: imageData) else {
-                    self.showError?(APIError.unknown)
+                    self.showError?(APIError.imageConvert)
                     return
                 }
 

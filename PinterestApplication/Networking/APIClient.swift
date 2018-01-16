@@ -14,7 +14,7 @@ enum Either<T> {
 }
 
 enum APIError: Error {
-    case unknown, badResponse, jsonDecoder
+    case unknown, badResponse, jsonDecoder, imageDownload, imageConvert
 }
 
 protocol APIClient {
